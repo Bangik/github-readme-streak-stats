@@ -22,6 +22,10 @@
  * ------------------------------
  * To enable right-to-left language support, add `"rtl" => true` to the locale array (see "he" for an example).
  *
+ * Comma Separator
+ * ---------------
+ * To change the comma separator in the enumeration of excluded days, add `"comma_separator" => ", "` to the locale array with the desired separator as the value.
+ *
  * Aliases
  * -------
  * To add an alias for a locale, add the alias as a key to the locale array with the locale it should redirect to as the value.
@@ -37,8 +41,18 @@ return [
         "Week Streak" => "Week Streak",
         "Longest Week Streak" => "Longest Week Streak",
         "Present" => "Present",
+        "Excluding {days}" => "Excluding {days}",
     ],
     // Locales below are sorted alphabetically
+    "am" => [
+        "Total Contributions" => "ጠቅላላ አስተዋጽዖዎች",
+        "Current Streak" => "የአሁን ድግግሞሽ",
+        "Longest Streak" => "በጣም ረጅሙ ድግግሞሽ",
+        "Week Streak" => "የሳምንት ድግግሞሽ",
+        "Longest Week Streak" => "በጣም ረጅሙ የሳምንት ድግግሞሽ",
+        "Present" => "ያሁኑ",
+        "Excluding {days}" => "ሳይጨምር {days}",
+    ],
     "ar" => [
         "rtl" => true,
         "Total Contributions" => "إجمالي المساهمات",
@@ -47,6 +61,8 @@ return [
         "Week Streak" => "السلسلة المتتالية الأُسبوعية",
         "Longest Week Streak" => "أُطول سلسلة متتالية أُسبوعية",
         "Present" => "الحاضر",
+        "Excluding {days}" => "باستثناء {days}",
+        "comma_separator" => "، ",
     ],
     "bg" => [
         "Total Contributions" => "Общ принос",
@@ -64,11 +80,32 @@ return [
         "Longest Week Streak" => "দীর্ঘতম সপ্তাহ স্ট্রিক",
         "Present" => "বর্তমান",
     ],
+    "ca" => [
+        "Total Contributions" => "Aportacions totals",
+        "Current Streak" => "Ratxa actual",
+        "Longest Streak" => "Ratxa més llarga",
+        "Week Streak" => "Ratxa setmanal",
+        "Longest Week Streak" => "Ratxa setmanal més llarga",
+        "Present" => "Actual",
+        "Excluding {days}" => "Excloent {days}",
+    ],
+    "ceb" => [
+        "Total Contributions" => "Kinatibuk-ang Kontribusyon",
+        "Current Streak" => "Kasamtangan nga Streak",
+        "Longest Streak" => "Pinakataas nga Streak",
+        "Week Streak" => "Sinemana nga Streak",
+        "Longest Week Streak" => "Pinakataas nga Semana nga Streak",
+        "Present" => "Karon",
+        "Excluding {days}" => "Wala'y Labot {days}",
+    ],
     "da" => [
-        "Total Contributions" => "Totalt Antal Bidrag",
-        "Current Streak" => "Nuværende i Træk",
-        "Longest Streak" => "Længst i Træk",
-        "Present" => "I dag",
+        "Total Contributions" => "Samlet antal bidrag",
+        "Current Streak" => "Bidrag i træk",
+        "Longest Streak" => "Flest bidrag i træk",
+        "Week Streak" => "Ugentlige bidrag i træk",
+        "Longest Week Streak" => "Flest ugentlige bidrag i træk",
+        "Present" => "Nuværende",
+        "Excluding {days}" => "Ekskluderer {days}",
     ],
     "de" => [
         "Total Contributions" => "Gesamte Beiträge",
@@ -77,6 +114,16 @@ return [
         "Week Streak" => "Wochenserie",
         "Longest Week Streak" => "Längste Wochenserie",
         "Present" => "Heute",
+        "Excluding {days}" => "Ausgenommen {days}",
+    ],
+    "el" => [
+        "Total Contributions" => "Συνολικές Συνεισφορές",
+        "Current Streak" => "Τρέχουσα Σειρά",
+        "Longest Streak" => "Μεγαλύτερη Σειρά",
+        "Week Streak" => "Εβδομαδιαία Σειρά",
+        "Longest Week Streak" => "Μεγαλύτερη Εβδομαδιαία Σειρά",
+        "Present" => "Σήμερα",
+        "Excluding {days}" => "Εξαιρούνται {days}",
     ],
     "es" => [
         "Total Contributions" => "Contribuciones Totales",
@@ -85,6 +132,7 @@ return [
         "Week Streak" => "Racha Semanal",
         "Longest Week Streak" => "Racha Semanal Más Larga",
         "Present" => "Presente",
+        "Excluding {days}" => "Excluyendo {days}",
     ],
     "fa" => [
         "rtl" => true,
@@ -94,6 +142,16 @@ return [
         "Week Streak" => "پی‌رفت هفته",
         "Longest Week Streak" => "طولانی ترین پی‌رفت هفته",
         "Present" => "اکنون",
+        "comma_separator" => "، ",
+    ],
+    "fil" => [
+        "Total Contributions" => "Kabuuang Kontribusyon",
+        "Current Streak" => "Kasalukuyang Streak",
+        "Longest Streak" => "Pinakamahabang Streak",
+        "Week Streak" => "Linggong Streak",
+        "Longest Week Streak" => "Pinakamahabang Linggong Streak",
+        "Present" => "Kasalukuyan",
+        "Excluding {days}" => "Hindi Kasama {days}",
     ],
     "fr" => [
         "Total Contributions" => "Contributions totales",
@@ -102,6 +160,7 @@ return [
         "Week Streak" => "Séquence de la semaine",
         "Longest Week Streak" => "Plus longue séquence hebdomadaire",
         "Present" => "Aujourd'hui",
+        "Excluding {days}" => "À l'exclusion de {days}",
     ],
     "he" => [
         "rtl" => true,
@@ -111,6 +170,7 @@ return [
         "Week Streak" => "רצף שבועי",
         "Longest Week Streak" => "רצף שבועי הכי ארוך",
         "Present" => "היום",
+        "Excluding {days}" => "לא כולל {days}",
     ],
     "hi" => [
         "Total Contributions" => "कुल योगदान",
@@ -119,6 +179,32 @@ return [
         "Week Streak" => "सप्ताहिक योगदान",
         "Longest Week Streak" => "दीर्घ साप्ताहिक योगदान",
         "Present" => "आज तक",
+        "Excluding {days}" => "के सिवा {days}",
+    ],
+    "ht" => [
+        "Total Contributions" => "kontribisyon total",
+        "Current Streak" => "tras aktyèl",
+        "Longest Streak" => "tras ki pi long",
+        "Week Streak" => "tras semèn",
+        "Longest Week Streak" => "pi long tras semèn",
+        "Present" => "Prezan",
+    ],
+    "hu" => [
+        "Total Contributions" => "Összes hozzájárulás",
+        "Current Streak" => "Jelenlegi sorozat",
+        "Longest Streak" => "Leghosszabb sorozat",
+        "Week Streak" => "Heti sorozat",
+        "Longest Week Streak" => "Leghosszabb heti sorozat",
+        "Present" => "Jelen",
+        "Excluding {days}" => "Kivéve {days}",
+    ],
+    "hy" => [
+        "Total Contributions" => "Ընդհանուր\nներդրումը",
+        "Current Streak" => "Ընթացիկ շարք",
+        "Longest Streak" => "Ամենաերկար շարք",
+        "Week Streak" => "Ընթացիկ\nշաբաթների շարք",
+        "Longest Week Streak" => "Ամենաերկար\nշաբաթների շարք",
+        "Present" => "Այժմ",
     ],
     "id" => [
         "Total Contributions" => "Total Kontribusi",
@@ -127,14 +213,16 @@ return [
         "Week Streak" => "Aksi Mingguan",
         "Longest Week Streak" => "Aksi Mingguan Terpanjang",
         "Present" => "Sekarang",
+        "Excluding {days}" => "Tidak termasuk {days}",
     ],
     "it" => [
-        "Total Contributions" => "Totale dei Contributi",
+        "Total Contributions" => "Contributi Totali",
         "Current Streak" => "Serie Corrente",
         "Longest Streak" => "Serie più Lunga",
         "Week Streak" => "Serie Settimanale",
         "Longest Week Streak" => "Serie Settimanale più Lunga",
         "Present" => "Presente",
+        "Excluding {days}" => "Escludendo {days}",
     ],
     "ja" => [
         "date_format" => "[Y.]n.j",
@@ -144,6 +232,17 @@ return [
         "Week Streak" => "週間ストリーク",
         "Longest Week Streak" => "最長の週間ストリーク",
         "Present" => "今",
+        "Excluding {days}" => "{days}を除く",
+        "comma_separator" => "・",
+    ],
+    "jv" => [
+        "Total Contributions" => "Total Kontribusi",
+        "Current Streak" => "Tumindak Saiki",
+        "Longest Streak" => "Tumindak Paling Dawa",
+        "Week Streak" => "Tumindak Saben Minggu",
+        "Longest Week Streak" => "Tumindak Saben Minggu Paling Dawa",
+        "Present" => "Saiki",
+        "Excluding {days}" => "Ora kelebu {days}",
     ],
     "kn" => [
         "Total Contributions" => "ಒಟ್ಟು ಕೊಡುಗೆ",
@@ -152,6 +251,7 @@ return [
         "Week Streak" => "ವಾರದ ಸ್ಟ್ರೀಕ್",
         "Longest Week Streak" => "ಅತ್ಯಧಿಕ ವಾರದ ಸ್ಟ್ರೀಕ್",
         "Present" => "ಪ್ರಸ್ತುತ",
+        "Excluding {days}" => "ಹೊರತುಪಡಿಸಿ {days}",
     ],
     "ko" => [
         "Total Contributions" => "총 기여 수",
@@ -160,6 +260,7 @@ return [
         "Week Streak" => "주간 기여 수",
         "Longest Week Streak" => "최대 주간 기여 수",
         "Present" => "현재",
+        "Excluding {days}" => "{days} 제외된",
     ],
     "mr" => [
         "Total Contributions" => "एकूण योगदान",
@@ -168,6 +269,25 @@ return [
         "Week Streak" => "साप्ताहिक सातत्यता",
         "Longest Week Streak" => "दीर्घकालीन साप्ताहिक सातत्यता",
         "Present" => "आज पर्यंत",
+        "Excluding {days}" => "वगळून {days}",
+    ],
+    "ms" => [
+        "Total Contributions" => "Jumlah Sumbangan",
+        "Current Streak" => "Tindakan Semasa",
+        "Longest Streak" => "Tindakan Terpanjang",
+        "Week Streak" => "Tindakan Setiap Minggu",
+        "Longest Week Streak" => "Tindakan Setiap Minggu Terpanjang",
+        "Present" => "Sekarang",
+        "Excluding {days}" => "Mengecualikan {days}",
+    ],
+    "ne" => [
+        "Total Contributions" => "कुल योगदान",
+        "Current Streak" => "हालको दैनिक योगदान",
+        "Longest Streak" => "सबैभन्दा लामो दैनिक योगदान",
+        "Week Streak" => "सप्ताहिक योगदान",
+        "Longest Week Streak" => "सबैभन्दा लामो साप्ताहिक योगदान",
+        "Present" => "आज सम्म",
+        "Excluding {days}" => "बाहेक {days}",
     ],
     "nl" => [
         "Total Contributions" => "Totale Bijdrage",
@@ -176,6 +296,7 @@ return [
         "Week Streak" => "Week Serie",
         "Longest Week Streak" => "Langste Week Serie",
         "Present" => "Vandaag",
+        "Excluding {days}" => "Exclusief {days}",
     ],
     "pl" => [
         "Total Contributions" => "Suma Kontrybucji",
@@ -186,12 +307,14 @@ return [
         "Present" => "Dziś",
     ],
     "ps" => [
+        "rtl" => true,
         "Total Contributions" => "ټولې ونډې",
         "Current Streak" => "اوسنی پرمختګ",
         "Longest Streak" => "تر ټولو اوږد پرمختګ",
         "Week Streak" => "د اونۍ پرمختګ",
         "Longest Week Streak" => "د اونۍ تر ټولو اوږد پرمختګ",
         "Present" => "اوس",
+        "comma_separator" => "، ",
     ],
     "pt_BR" => [
         "Total Contributions" => "Total de Contribuições",
@@ -200,6 +323,7 @@ return [
         "Week Streak" => "Sequência Semanal",
         "Longest Week Streak" => "Maior Sequência Semanal",
         "Present" => "Presente",
+        "Excluding {days}" => "Exceto {days}",
     ],
     "ru" => [
         "Total Contributions" => "Общий вклад",
@@ -208,18 +332,84 @@ return [
         "Week Streak" => "Текущая серия недель",
         "Longest Week Streak" => "Самая длинная серия недель",
         "Present" => "Сейчас",
+        "Excluding {days}" => "Не включая {days}",
+    ],
+    "rw" => [
+        "Total Contributions" => "Imisanzu yose",
+        "Current Streak" => "Igihe gishize ntaguhagarara",
+        "Longest Streak" => "Igihe cyirecyire cyashize ntaguhagarara",
+        "Week Streak" => "Igihe gishize ntaguhagarara mu cyumweru",
+        "Longest Week Streak" => "Igihe cyirecyire cyashize ntaguhagarara mu byumweru",
+        "Present" => "None",
+    ],
+    "sa" => [
+        "Total Contributions" => "कुल योगदानम्",
+        "Current Streak" => "क्रमशः दिवसान् चालयन्तु",
+        "Longest Streak" => "दीर्घतमाः क्रमशः दिवसाः",
+        "Week Streak" => "निरन्तरसप्ताहाः",
+        "Longest Week Streak" => "दीर्घतमाः निरन्तरसप्ताहाः",
+        "Present" => "वर्तमान",
+        "Excluding {days}" => "बहिष्करणम् {days}",
+    ],
+    "sr" => [
+        "Total Contributions" => "Укупно додавања",
+        "Current Streak" => "Тренутна серија",
+        "Longest Streak" => "Најдужа серија",
+        "Week Streak" => "Недељна серија",
+        "Longest Week Streak" => "Најдужа недељена серија",
+        "Present" => "Данас",
+        "Excluding {days}" => "Искључујући {days}",
+    ],
+    "su" => [
+        "Total Contributions" => "Total Kontribusi",
+        "Current Streak" => "Aksi Ayeuna",
+        "Longest Streak" => "Aksi Pangpanjangna",
+        "Week Streak" => "Aksi Unggal Minggon",
+        "Longest Week Streak" => "Aksi Unggal Minggon Pangpanjangna",
+        "Present" => "Ayeuna",
+        "Excluding {days}" => "Teu Kaasup {days}",
+    ],
+    "sv" => [
+        "Total Contributions" => "Totalt antal uppladningar",
+        "Current Streak" => "Dagar uppladdat i rad just nu",
+        "Longest Streak" => "Längst antal dagar uppladdat i rad",
+        "Week Streak" => "Antal veckor i rad",
+        "Longest Week Streak" => "Längst antal veckor i rad",
+        "Present" => "Just nu",
+    ],
+    "sw" => [
+        "Total Contributions" => "Jumla ya Michango",
+        "Current Streak" => "Mfululizo wa sasa",
+        "Longest Streak" => "Mfululizo mrefu zaidi",
+        "Week Streak" => "Mfululizo wa wiki",
+        "Longest Week Streak" => "Mfululizo mrefu zaidi wa wiki",
+        "Present" => "Sasa",
     ],
     "ta" => [
         "Total Contributions" => "மொத்த\nபங்களிப்புகள்",
         "Current Streak" => "மிக சமீபத்திய பங்களிப்புகள்",
         "Longest Streak" => "நீண்ட\nபங்களிப்புகள்",
+        "Week Streak" => "வார\nபங்களிப்புகள்",
+        "Longest Week Streak" => "நீண்ட வார\nபங்களிப்புகள்",
         "Present" => "இன்றுவரை",
+    ],
+    "th" => [
+        "Total Contributions" => "คอนทริบิ้วต์ทั้งหมด",
+        "Current Streak" => "สตรีคปัจจุบัน",
+        "Longest Streak" => "สตรีคที่ยาวนานที่สุด",
+        "Week Streak" => "สตรีคประจำสัปดาห์",
+        "Longest Week Streak" => "สตรีคประจำสัปดาห์\nที่ยาวนานที่สุด",
+        "Present" => "ปัจจุบัน",
+        "Excluding {days}" => "ยกเว้น {days}",
     ],
     "tr" => [
         "Total Contributions" => "Toplam Katkı",
         "Current Streak" => "Güncel Seri",
         "Longest Streak" => "En Uzun Seri",
+        "Week Streak" => "Haftalık Seri",
+        "Longest Week Streak" => "En Uzun Haftalık Seri",
         "Present" => "Şu an",
+        "Excluding {days}" => "Hariç {days}",
     ],
     "uk" => [
         "Total Contributions" => "Загальний вклад",
@@ -228,6 +418,7 @@ return [
         "Week Streak" => "Діяльність за тиждень",
         "Longest Week Streak" => "Найбільша к-сть тижнів",
         "Present" => "Наразі",
+        "Excluding {days}" => "Виключаючи {days}",
     ],
     "ur_PK" => [
         "rtl" => true,
@@ -237,6 +428,8 @@ return [
         "Week Streak" => "ہفتہ وار تسلسل",
         "Longest Week Streak" => "طویل ترین ہفتہ وار تسلسل",
         "Present" => "حاظر",
+        "Excluding {days}" => "خارج {days}",
+        "comma_separator" => "، ",
     ],
     "vi" => [
         "Total Contributions" => "Tổng số đóng góp",
@@ -245,6 +438,7 @@ return [
         "Week Streak" => "Chuỗi tuần",
         "Longest Week Streak" => "Chuỗi tuần lớn nhất",
         "Present" => "Hiện tại",
+        "Excluding {days}" => "Ngoại trừ {days}",
     ],
     "yo" => [
         "Total Contributions" => "Lapapọ ilowosi",
@@ -253,6 +447,7 @@ return [
         "Week Streak" => "ṣiṣan ọsẹ",
         "Longest Week Streak" => "gunjulo ọsẹ ṣiṣan",
         "Present" => "lọwọlọwọ",
+        "Excluding {days}" => "Yato si {days}",
     ],
     "zh" => "zh_Hans",
     "zh_Hans" => [
@@ -262,6 +457,8 @@ return [
         "Week Streak" => "周连续贡献",
         "Longest Week Streak" => "最长周连续贡献",
         "Present" => "至今",
+        "Excluding {days}" => "除外 {days}",
+        "comma_separator" => "、",
     ],
     "zh_Hant" => [
         "Total Contributions" => "合計貢獻",
@@ -270,5 +467,7 @@ return [
         "Week Streak" => "周連續貢獻",
         "Longest Week Streak" => "最常周連續貢獻",
         "Present" => "至今",
+        "Excluding {days}" => "除外 {days}",
+        "comma_separator" => "、",
     ],
 ];
